@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <!-- Estilos -->
+    <link href="{% static 'core/resources/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'core/resources/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'core/css/main.css' %}" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="{% static 'core/resources/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'core/resources/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'core/js/main.js' %}"></script>
+    
+  </head>
+  <body>
+    <body>
+
+      <!-- Navegación -->
+      <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'home' %}">
+          <img src="{% static 'core/img/sadab-navbar.png' %}" width="170" height="50" class="d-inline-block align-top"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ned" aria-controls="ned" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="ned">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Contenido -->
+      {% block content %}{% endblock %}
+      <!-- Pié de página -->
+      <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-1 col-xl-1 mx-auto mt-3">
+            <img src="{% static 'core/img/sadab-footer.png' %}" width="150" height="150" ></a>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold">Paginas</h5>
+            <p>
+              <a href="{% url 'home' %}" class="text-white"> Inicio</a>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold" >Contacto</h5>
+              <p>
+                <i class="fa fa-home mr-3"></i>Ecuador, Portoviejo
+              </p>
+              <p>
+                <i class="fa fa-envelope mr-3"></i>fgarcia1924@utm.edu.ec
+              </p>
+              <p>
+                <i class="fa fa-whatsapp mr-3"></i>+593 992955000
+              </p>
+              <p>
+                <i class="fa fa-phone	 mr-3"></i>+05 2001123
+              </p>
+            </div>
+            
+          </div>
+
+          <hr class="mb-4">
+          <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+              <p>	Copyright ©2023 Todos los derechos reservados:
+              <strong>Fabricio Garcia.</strong>
+              </p>
+              
+            </div>
+
+            <div class="col-md-5 col-lg-4">
+              <div class="text-center text-md-right">
+                <ul class="list-unstyled list-inline">
+                
+                  <li class="list-inline-item">
+                    <a href="http://facebook.com" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="http://twitter.com" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="http://instagram.com" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa fa-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="http://youtube.com" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa fa-youtube"></i></a>
+                  </li>
+                </ul>           
+              </div>             
+            </div>           
+          </div>
+        </div>        
+      </footer>
+  </body>
+</html>

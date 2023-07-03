@@ -150,3 +150,10 @@ AUTH_USER_MODEL = 'panelusers.User'
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 SENDGRID_API_KEY = "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"
 SENDGRID_SANDBOX_MODE_IN_DEBUG = False
+
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_HOST = 'smtp.sendgrid.net'
+#EMAIT_PORT = 587
+#EMAIL_USE_TLS = True
+#EMAIL_HOST_USER = 'apikey'
+#EMAIL_HOST_PASSWORD = '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'

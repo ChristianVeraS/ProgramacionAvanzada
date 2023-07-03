@@ -1,0 +1,26 @@
+{% extends 'core/main.html' %}
+{% load static %}
+{% block title %}Iniciar Sesion{% endblock %}
+{% block content %}
+
+<div class="container-lg">
+  <div style=" background-color: #d8d8d8; padding-top:123px; padding-bottom:123px; text-align:center;">
+    <form method="POST">
+        <h2>Iniciar Sesion</h2>
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="form-group">
+                {{ field.errors }}
+                <label>{{ field.label_tag }}</label>
+                <p>{{ field }} </p>
+            </div>
+                {% endfor %}
+                <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                <button type="reset" class="btn btn-primary">Borrar</button>
+                <div style="padding-top:10px;">
+                <a  href="{% url 'password_reset' %}">Recuperar contraseña</a>
+            </div>
+        </form>
+    </div>
+</div>       
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'core/main.html' %}
+{% load static %}
+{% block title %}Contacto{% endblock %}
+{% block content %}
+
+<div class="container-fluid p-5 mb- bg-success text-white">
+  <div style="padding-top:10px; text-align:center;">
+        <h2>Contacto</h2>
+  </div>
+</div>
+<div class="container pt-5 pb-5 text-center">
+<h2 style="padding-bottom:10px;">Puedes contactarnos por estos medios</h2>
+  <div class="row">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <img style="padding-bottom:20px;" src="{% static 'core/img/icon-whatsapp.svg' %}"  width="200" height="200"  ></a>
+      <h4>Escribenos</h4>
+      <p style="font-size: 1.2em;">Nos puedes escribir a whatssapp nuestro numero es: +593 9929955000</p>
+    </div>
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <img style="padding-bottom:20px;" src="{% static 'core/img/icon-email.svg' %}" width="200" height="200"  ></a>
+      <h4>Envianos un email</h4>
+      <p style="font-size: 1.2em;">Nos puedes enviar un email al siguiente correo: fgarcia1924@utm.edu.ec</p> 
+    </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+      <img style="padding-bottom:20px;" src="{% static 'core/img/icon-maps.svg' %}" width="200" height="200"  ></a>
+      <h4>Ven a nustro local</h4>
+      <p style="font-size: 1.2em;">estamos ubicados alado del parque nacionel yasuni</p>
+    </div>
+  </div>   
+</div>
+
+{% endblock %}

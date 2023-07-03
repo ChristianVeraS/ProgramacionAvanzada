@@ -1,0 +1,25 @@
+{% extends 'core/main.html' %}
+{% load static %}
+{% block title %}Nostros{% endblock %}
+{% block content %}
+
+<div class="container-fluid p-5 mb- bg-danger text-white">
+  <div style="padding-top:10px; text-align:center;">
+        <h2>Nosotros</h2>
+  </div>
+</div>
+
+<div class="container "> 
+  <div class="row align-items-center " style="padding-top:50px; padding-bottom:50px; text-align:center;">
+    <div class="col">
+      <h1>Mision</h1>
+      <p style="font-size: 1.2em;" > Contribuimos a resolver las necesidades de vivienda de la población y garantizar la operación continua de nuestros clientes, generando valor para nuestros accionistas y colaboradores.</p>
+      <h1>Vision</h1>
+      <p style="font-size: 1.2em;">SADAB INTERNATIONAL S.A. es una empresa que ofrece servicios integrales inmobiliarios y de mantenimiento de infraestructura. Sus altos estándares de calidad y la satisfacción de sus clientes le permiten liderar el mercado nacional y tener presencia internacional.</p>
+    </div>
+    <div class="col ">
+      <img width="320" height="247" src="{% static 'core/img/about-logo.png' %}" ></a>
+    </div>
+  </div>
+</div>
+{% endblock %}

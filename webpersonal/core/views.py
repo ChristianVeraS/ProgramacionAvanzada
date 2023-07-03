@@ -7,3 +7,5 @@ class HomePagueView(TemplateView):
 class ContactPagueView(TemplateView):
     template_name = "core/contact.html"
 
+class AboutPagueView(TemplateView):
+    template_name = "core/about.html"

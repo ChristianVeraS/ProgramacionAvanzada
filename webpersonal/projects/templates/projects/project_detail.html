@@ -1,0 +1,22 @@
+{% extends 'core/main.html' %}
+{% load static %}
+{% block title %}{{project.title}}{% endblock %}
+{% block content %}
+<main role="main">
+  <div class="container text-center " style="padding-bottom:50px; ">
+    <div class="row mt-3">
+      <div class="col-md-9 mx-auto">
+        <h2 class="section-heading mb-4">{{project.title}}</h2>
+        <hr>
+        <div>
+          {{project.content|safe}}
+          {% if request.user.is_staff %}
+          {% endif %}
+          <img src="{{project.image.url}}" class="rounded img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
+
